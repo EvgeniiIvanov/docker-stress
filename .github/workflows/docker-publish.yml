@@ -24,7 +24,7 @@ jobs:
         run : |
           docker buildx build \
             --platform linux/amd64,linux/arm64 \
-            --tag docker.io/eugeneivanov/stress:latest
+            --tag docker.io/eugeneivanov/stress:latest \
             --output "type=image,push=true" \
              -f Dockerfile .
              
